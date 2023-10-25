@@ -2,13 +2,14 @@
 
 all: final
 
-final : main.o  
+final : oneHand.o  
 	@echo "Making a final file"
-	gcc -o final main.o
+	gcc -o final oneHand.o
 
-main.o : one-hand.c
+oneHand.o : one-hand.c
 	@echo "Making -o file"
-	g++ one-hand.c -o main.o
+	g++ one-hand.c -o oneHand.o
 
 clean: 
-	rm main.o final
+	rm oneHand.o final
+
