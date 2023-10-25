@@ -1,7 +1,6 @@
 
 
 all: final
-
 final : oneHand.o  
 	@echo "Making a final file"
 	gcc -o final oneHand.o
